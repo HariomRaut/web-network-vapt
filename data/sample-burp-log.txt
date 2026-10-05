@@ -1,0 +1,11 @@
+# Sample Burp Suite Proxy Log (request/response)
+# Format: timestamp, method, URL, status, length
+
+[2025-10-05 12:10:00] GET http://10.0.0.5/login.php 200 3420
+[2025-10-05 12:10:05] POST http://10.0.0.5/login.php 200 3450
+    # POST data: username=admin&password=admin
+[2025-10-05 12:10:10] GET http://10.0.0.5/admin/ 200 1240
+[2025-10-05 12:10:15] GET http://10.0.0.5/images/ 200 980  # Directory listing enabled
+[2025-10-05 12:10:20] GET http://10.0.0.5/.git/HEAD 200 23   # Exposed .git meta
+[2025-10-05 12:10:25] GET http://10.0.0.5/upload.php 200 1500
+    # Potential file upload endpoint

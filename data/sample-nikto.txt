@@ -1,0 +1,23 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.0.0.5
++ Target Hostname:    metasploitable.local
++ Target Port:        80
++ Start Time:         2025-10-05 12:05:00 (GMT0)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch
++ Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.6
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined.
++ The X-Content-Type-Options header is not set.
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.41). Apache 2.0.65 final release was
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ Retrieved via: Server: Apache/2.2.8 (Ubuntu) PHP/5.2.4-2ubuntu5.6 with Suhosin-Patch
++ OSVDB-3268: /config.php.bak: Backup file may contain web application credentials.
++ OSVDB-3092: /test.php: This might be interesting...
++ OSVDB-3233: /icons/README: Apache default file found.
++ 6457 requests: 0 error(s) and 15 item(s) reported on remote host
++ End Time:           2025-10-05 12:07:30 (GMT0)
+---------------------------------------------------------------------------
